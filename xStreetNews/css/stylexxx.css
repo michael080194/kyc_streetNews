@@ -1,0 +1,104 @@
+* {
+    font-family: '微軟正黑體';
+    font-size: 11pt;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'tadfont';
+}
+
+@font-face {
+    font-family: tadfont;
+    src: url('myfont.ttf');
+}
+
+@font-face {
+    font-family: setofont;
+    src: url('setofont.ttf');
+}
+
+.service_img {
+    width: 60%;
+    display: block;
+    margin: 0px auto;
+}
+
+img.service_img + h2 {
+    text-align: center;
+}
+
+#footer {
+    background: #123456;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0px;
+    margin-top: 30px;
+}
+
+.parallax {
+    background: #000 url('images/b1.jpg') center center /cover no-repeat fixed;
+    padding: 30px 0px;
+    color: #fcfcfc;
+}
+
+.parallax p,
+.parallax h2,
+.parallax h3 {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .9);
+}
+
+.parallax small {
+    color: #cfcfcf;
+}
+
+.parallax p {
+    font-size: 1.3em;
+    line-height: 1.8em;
+    text-align: justify;
+}
+/*選單項目*/
+
+ul.nav>li>a {
+    color: white;
+}
+/*滑鼠移過選單項目時*/
+
+ul.nav>li>a:hover {
+    background-color: transparent;
+    border-bottom: 3px solid #ff7f00;
+}
+/*焦點在項目上時*/
+
+ul.nav>li>a:focus {
+    background-color: transparent;
+    border-bottom: 3px solid red;
+}
+/*開啟下拉選單時*/
+
+ul.nav>li.open>a,
+ul.nav>li.open>a:hover,
+ul.nav>li.open>a:focus {
+    background-color: transparent;
+    color: yellow;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+    font-family: 'tadfont';
+    font-size: 1.5em;
+    color: #c0d677;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .9);
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.mini_menu {
+    background: #000 url('images/min-header.jpg') top left /cover;
+    border-bottom: 1px solid #156785;
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.4);
+}

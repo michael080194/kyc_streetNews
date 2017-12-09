@@ -1,0 +1,45 @@
+【版型及內容】：
+<!-- 載入布局 -->
+<{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/$theme_type.tpl"}>
+
+
+【頁尾】：
+
+<{if $xoops_isadmin}>
+  <a href="<{$xoops_url}>/modules/system/admin.php?fct=preferences&op=show&confcat_id=3" class="block_config"></a>
+<{/if}>
+<{$xoops_footer}>
+
+
+【佈景變數及必要的語法】：（加至</body>前）
+
+<!-- 載入bootstrap -->
+<{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/bootstrap_js.tpl"}>
+
+<!-- 載入自訂js -->
+<{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/my_js.tpl"}>
+
+
+<{$my_code}>
+<!-- 顯示參數，開發用，開發完可刪除 -->
+<{if $show_var=='1'}>
+  <{includeq file="$xoops_rootpath/modules/tadtools/themes_common/show_var.tpl"}>
+<{/if}>
+
+=================================== 以下為非必要 ====================================
+
+【logo區】：
+
+<{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/logo.tpl"}>
+
+
+【導覽列】：
+
+<{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/navbar.tpl"}>
+
+
+【滑動圖文】：
+
+<!-- 滑動圖 -->
+<{includeq file="$xoops_rootpath/modules/tadtools/themes3_tpl/slideshow_responsive.tpl"}>
+

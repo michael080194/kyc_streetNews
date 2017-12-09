@@ -1,0 +1,25 @@
+XOOPS2.5 空白範例模組 1.0 （2015/03/21 釋出）
+===========================================
+1.修正 xoops_version.php 中不存在的語系
+2.加入 $xoopsTpl 的用法
+3.加入 bootstrap 的支援
+
+冠宇自訂佈景名稱 kyc , 放在 xoops 的 /themes/kyc 裡面
+主要注意的二檔案 theme.html  nv.tpl(xoops 的 /themes/kyc/xotpl)
+local端我將這二檔案放在 D:\UniServerZ\www\kyc_car\kyc_theme
+
+網站 自訂功能表增加程式選項(例如我要多一支查詢車籍的程式)
+1.修改功能表(功能表  nav.tpl 放在 local 端的
+  D:\UniServerZ\www\kyc_car\kyc_theme 裡面)
+  修改完後再將 nav.tpl 上傳至網站的  xoops 的 /themes/kyc/xotpl
+2.在xoops_version.php 的$modversion['templates'] 新增 index_user.php
+  所須的 index_user.tpl
+3.http://202.39.64.155/~kyc/admin.php 進去行動車籍模組按更新
+4.新增  index_user.tpl , 放在 templates裡面,並上傳至網站
+
+
+
+mk_dir(XOOPS_ROOT_PATH."/uploads/kyc_streetNews");
+mk_dir(XOOPS_ROOT_PATH."/uploads/kyc_streetNews/topic");
+mk_dir(XOOPS_ROOT_PATH."/uploads/kyc_streetNews/cover");
+mk_dir(XOOPS_ROOT_PATH."/uploads/kyc_streetNews/cover/thumb");
